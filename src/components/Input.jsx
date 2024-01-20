@@ -11,7 +11,7 @@ export default forwardRef(function Input({ textarea, label, ...props }, ref) {
       {textarea ? (
         <textarea ref={ref} className={classes} {...props} />
       ) : (
-        <input ref={ref} className={classes} />
+        <input ref={ref} className={classes} {...props} />
       )}
     </p>
   );
